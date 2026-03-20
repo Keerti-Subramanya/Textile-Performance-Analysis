@@ -13,64 +13,67 @@ This repository contains both exploratory data analysis (EDA) using Jupyter Note
 
 
 ## 🚀 Key Features
-Interactive Streamlit Dashboard (app.py):
+### Interactive Streamlit Dashboard (app.py):
 
-Dynamic filtering capabilities by Year and Product Name.
+-Dynamic filtering capabilities by Year and Product Name.
 
-Custom slider for Minimum Sales to filter high/low-performing records.
+-Custom slider for Minimum Sales to filter high/low-performing records.
 
-Real-time calculation of derived metrics: Net Profit, Profit Margin (%), and Profit per Worker.
+-Real-time calculation of derived metrics: Net Profit, Profit Margin (%), and Profit per Worker.
 
-Interactive visualizations using Plotly Express (e.g., Boxplots for Worker Efficiency).
+-Interactive visualizations using Plotly Express (e.g., Boxplots for Worker Efficiency).
 
-Static Exploratory Data Analysis (textile_python_project.ipynb):
 
-Robust data wrangling, missing value checks, and data type casting.
 
-Calculation of core business metrics including Net Profit (Profit - Loss) and Profit Margins.
+### Static Exploratory Data Analysis (textile_python_project.ipynb):
 
-Insightful static visualizations, including:
+-Robust data wrangling, missing value checks, and data type casting.
 
-Average Total Sale by Product (Bar Chart)
+-Calculation of core business metrics including Net Profit (Profit - Loss) and Profit Margins.
 
-Net Profit Trends by Year (Bar Chart)
+-Insightful static visualizations, including:
 
-Profit Margin Distributions (Boxplot)
+-Average Total Sale by Product (Bar Chart)
 
-Performance Insights:
+-Net Profit Trends by Year (Bar Chart)
 
-Identifies top-performing product lines (e.g., Shirts and Kurtas dominate volume).
+-Profit Margin Distributions (Boxplot)
 
-Evaluates year-over-year revenue generation and operational bottlenecks.
+
+
+### Performance Insights:
+
+-Identifies top-performing product lines (e.g., Shirts and Kurtas dominate volume).
+
+-Evaluates year-over-year revenue generation and operational bottlenecks.
 
 
 
 ## 📁 Repository Structure
-app.py * The main entry point for the Streamlit web application. Contains the front-end layout, caching logic for data loading, dynamic filters, and Plotly-based interactive components.
+app.py : The main entry point for the Streamlit web application. Contains the front-end layout, caching logic for data loading, dynamic filters, and Plotly-based interactive components.
 
-textile_python_project.ipynb * The Jupyter Notebook containing the initial data exploration, statistical summaries, and static graph generation using Plotly and Pandas.
+textile_python_project.ipynb : The Jupyter Notebook containing the initial data exploration, statistical summaries, and static graph generation using Plotly and Pandas.
 
-textile_company_data_10000.csv * The raw dataset consisting of 10,000 records. Key features include Year, Product Name, Profit, Loss, Total Sale, Total Manufacturing, Total No of Workers, Salary, and Raw Material/Production Costs.
+textile_company_data_10000.csv : The raw dataset consisting of 10,000 records. Key features include Year, Product Name, Profit, Loss, Total Sale, Total Manufacturing, Total No of Workers, Salary, and Raw Material/Production Costs.
 
 
 
 ## ⚙️ Installation & Setup
 To run this project locally, ensure you have Python 3.8+ installed, then follow these steps:
 
-Clone the repository:
+### Clone the repository:
 
+-git clone https://github.com/Keerti-Subramanya/Textile-Performance-Analysis.git
+-cd textile-analytics
 
-git clone https://github.com/Keerti-Subramanya/Textile-Performance-Analysis.git
-cd textile-analytics
+### Install the required dependencies:
+-pip install pandas numpy streamlit plotly jupyter
 
-Install the required dependencies:
-pip install pandas numpy streamlit plotly jupyter
+### Run the Jupyter Notebook (for static analysis):
+-jupyter notebook textile_python_project.ipynb
 
-Run the Jupyter Notebook (for static analysis):
-jupyter notebook textile_python_project.ipynb
-
-Launch the Streamlit Dashboard:
-streamlit run app.py
+### Launch the Streamlit Dashboard:
+-streamlit run app.py
 
 
 ## 🛠️ Tech Stack
